@@ -1,9 +1,9 @@
 import java.util.Stack;
 
-public class Prueba {
+public class Main {
     public static void main(String[] args) {
         // Declarar un arreglo con 5 palabras
-        String[] palabras = {"hola", "mundo", "java", "pila", "programación"};
+        String[] palabras = {"hola", "mundo", "java", "pila", "cola"};
 
         // Crear una pila
         Stack<String> miPila = new Stack<>();
@@ -15,26 +15,22 @@ public class Prueba {
 
         // Agregar dos palabras nuevas a la pila
         miPila.push("nuevo");
+
+
         miPila.push("elemento");
 
         // Imprimir el último elemento de la pila antes de eliminarlo
-        System.out.println("Último elemento de la pila antes de eliminar: " + miPila.peek());
+        
+        miPila.peek();
 
         // Eliminar el último elemento de la pila
-        String ultimoElemento = miPila.pop();
+        miPila.pop();
 
-        // Imprimir el último elemento eliminado
-        System.out.println("Último elemento eliminado de la pila: " + ultimoElemento);
-
-        // Imprimir todos los elementos restantes en la pila
-        System.out.println("Elementos restantes en la pila:");
-        for (String elemento : miPila) {
-            System.out.println(elemento);
-        }
+        System.out.println(miPila);
 
         // Verificar si la pila está vacía
         if (miPila.empty()) {
-            System.out.println("La pila está vacía.");
+            System.out.println();
         } else {
             System.out.println("La pila NO está vacía.");
         }

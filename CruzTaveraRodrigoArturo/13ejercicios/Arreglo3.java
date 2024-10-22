@@ -14,6 +14,6 @@ class Arreglo3{
         for (int i = 1; i <= palabras.length; i++){
             System.out.println(palabras[i]);
         }
-    
+            
     }
 }
